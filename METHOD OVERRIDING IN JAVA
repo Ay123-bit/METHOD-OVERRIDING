@@ -1,0 +1,25 @@
+//INPUT
+class A{
+    void D(){
+        System.out.println("Jai Shree");
+    }
+//METHOD OVERRIDIING
+}
+class B extends A{
+    @Override
+    void D(){
+        super.D();
+        System.out.println("Raam");
+    }
+}
+class C{
+    public static void main(String[] args){
+        A r=new B();
+        r.D();
+
+    }
+
+}
+//OUTPUT
+Jai Shree
+Raam
